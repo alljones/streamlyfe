@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Streamlyfe</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<!-- Navigation -->
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/streamlyfe-logo.svg" width="180" class="d-inline-block align-top" alt="">
+        </a>
+        <form class="form-inline my-2 my-lg-0">
+            <input id="searchInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button id="searchBtn" class="btn my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>  
+</nav>
+
+<!-- Carousel -->
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="assets/images/jumbotron/slide_1.png" alt="First slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="assets/images/jumbotron/slide_2.png" alt="Second slide">>
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="assets/images/jumbotron/slide_3.png" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+                <img class="d-block w-100" src="assets/images/jumbotron/slide_4.png" alt="Fourth slide">
+        </div>
+        <div class="carousel-item">
+                <img class="d-block w-100" src="assets/images/jumbotron/slide_5.png" alt="Fifth slide">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Body Content -->
+<h2 class="heading">Find from the following</h2>
+<div class="container">
+    <div id="content" class="row results">
+        <div class="col-sm text-center">
+            <img src="assets/images/fblive-logo.png" alt="Facebook Live logo">
+        </div>
+        <div class="col-sm text-center">
+                <img src="assets/images/twitch_logo.png" alt="Twitch logo">
+        </div>
+        <div class="col-sm text-center">
+                <img src="assets/images/youtube-logo.png" alt="Youtube logo">
+        </div>
+    </div>
+</div>
+	
+	
+	
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+      
+        <iframe id="iframeYoutube" width="460" height="315"  src="https://www.youtube.com/embed/e80BbX05D7Y" frameborder="0" allowfullscreen></iframe> 
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+	
+	
+<!--Footer-->
+<footer class="page-footer">
+    <!--Copyright-->
+    <div class="footer-copyright text-center">
+        © 2018 Copyright:
+        <a href="#"> Streamlyfe,LLC </a>
+    </div>
+    <!--/.Copyright-->
+    
+</footer>
+ 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
