@@ -1,7 +1,13 @@
-//Youtube
-var search = $("#searchInput").val().trim();
 
-$(function() {
+$(document).ready(function(){
+  
+  $("#myModal").on("hidden.bs.modal",function(){
+    $("#iframeYoutube").attr("src","#");
+  })
+
+  //Youtube
+  var search = $("#searchInput").val().trim();
+
   $("#searchBtn").on("click", function(e) {
      e.preventDefault();
 	  $("#carouselExampleControls").html("");
@@ -11,7 +17,6 @@ $(function() {
      // prepare the request
   $.get(
         "https://www.googleapis.com/youtube/v3/search",
-
         {
           part: 'snippet',
           maxResults: 20,
@@ -39,15 +44,6 @@ $(function() {
         });
      }); 
   }); 
-});
-
-
-
-
-$(document).ready(function(){
-  $("#myModal").on("hidden.bs.modal",function(){
-    $("#iframeYoutube").attr("src","#");
-  })
 })
 
 function changeVideo(vId){
